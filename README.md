@@ -2,9 +2,11 @@
 * Clonar o projeto para a máquina;
 * Instalar as dependências utilizando o `npm i`;
 * Criar na aplicação o arquivo `.env` na pasta `/src` com a seguinte estrutura:
+  `
   module.exports = {
     password: "secret"
-  }
+  }`
+  
   Onde o password será a senha do seu MySQL local;
 * Possuir o MySql instalado na máquina (Para rodar o servidor Local);
 * Possuir o Knex instalado na máquina `npm i -g knex`;
@@ -15,16 +17,7 @@
 
 ## Exemplos de Querys e Mutations
 #### Query
-`{
-    getUsers {
-      name
-      email
-    }
-    
-    getUser(id: 1) {
-      password
-    }
-  }`
+`{ getUsers { name email } getUser(id: 1) { password }}`
 
 #### Mutation
  `mutation {
